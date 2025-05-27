@@ -119,6 +119,9 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set, ufsbsg, ufsframework, bsg)
 
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-cupid/device.mk)
+
 # Camera
 $(call soong_config_set,camera,override_format_from_reserved,true)
 
@@ -497,3 +500,14 @@ PRODUCT_PACKAGES += \
     firmware_qca6490_wlan_mac.bin_symlink \
     firmware_qca6750_WCNSS_qcom_cfg.ini_symlink \
     firmware_qca6750_wlan_mac.bin_symlink
+
+# Derpfest build type
+DERPFEST_BUILD_TYPE := Community
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Viper4Android
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
