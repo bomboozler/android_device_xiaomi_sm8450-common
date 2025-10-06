@@ -53,20 +53,7 @@ bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
 bluetooth.hardware.power.rx_cur_ma=28
 bluetooth.hardware.power.tx_cur_ma=36
-bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=true
-bluetooth.profile.avrcp.controller.enabled=false
-bluetooth.profile.avrcp.target.enabled=true
-bluetooth.profile.gatt.enabled=true
-bluetooth.profile.hfp.ag.enabled=true
-bluetooth.profile.hid.device.enabled=true
-bluetooth.profile.hid.host.enabled=true
-bluetooth.profile.map.server.enabled=true
-bluetooth.profile.opp.enabled=true
-bluetooth.profile.pan.nap.enabled=true
-bluetooth.profile.pan.panu.enabled=true
-bluetooth.profile.pbap.server.enabled=true
-bluetooth.profile.sap.server.enabled=false
 persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
@@ -83,6 +70,9 @@ camera.disable_zsl_mode=true
 persist.vendor.vcb.enable=false
 ro.camera.enableCamera1MaxZsl=1
 ro.hardware.camera=xiaomi
+
+# Chipset
+ro.soc.manufacturer=QTI
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
@@ -135,6 +125,7 @@ debug.sf.earlyGl.app.duration=13666666
 debug.sf.earlyGl.sf.duration=15666666
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
+debug.sf.frame_rate_multiple_threshold=120
 debug.sf.hw=0
 debug.sf.latch_unsignaled=1
 debug.sf.late.app.duration=13666666
